@@ -5,24 +5,86 @@
 }
 
 :root {
-    --sptfy--litegray: #1f1f1f;
+    --sptfy--litegray: #303030;
     --sptfy-gray: #202020;
 }
+
+/* utility */
 
 
 /* start header */
 /* nav */
 nav {
     background-color: black;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
 
-    .logo {
-        height: 56px;
-        width: 40px;
-        margin-left: 10px;
+    a {
+        text-decoration: none;
+        color: white
+    }
+
+    .nav-left {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
 
         img {
             height: 100%;
             width: 100%;
         }
+
+        .logo {
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+
+
+        }
+
+        .icon-container {
+            display: flex;
+            height: 40px;
+
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                border-radius: 100%;
+                background-color: var(--sptfy--litegray);
+            }
+
+            .search {
+                margin-left: 10px;
+                display: flex;
+
+                input {
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    background-color: var(--sptfy--litegray);
+                    border: 1 px var(--sptfy--litegray);
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
+
+    .nav-rigth {
+        display: flex;
+        align-items: center;
+
+        .link-utility {
+            display: flex;
+            column-gap: 10px;
+            padding-right: 20px;
+            border-right: 3px solid grey;
+
+        }
+    }
+
 }
