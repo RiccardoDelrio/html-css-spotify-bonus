@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sptfy--litegray: #1f1f1f;
+    --sptfy-gray: #202020;
+}
+
+
+/* start header */
+/* nav */
+nav {
+    background-color: black;
+
+    .logo {
+        height: 56px;
+        width: 40px;
+        margin-left: 10px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
